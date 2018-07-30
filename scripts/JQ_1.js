@@ -1,6 +1,5 @@
 $(document).ready(function(){
-    $(".btn-slide").click(function(){
-        $("#panel").slideToggle("slow");
-        $(this).toggleClass("active");
+    $(".pane .delete").click(function(){
+	$(this).parents(".pane").animate({ opacity: "hide" }, "slow");
     });
 });
